@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Infant:wght@400;700&family=Raleway:wght@400;700&display=swap');
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: 0;
 }
 body {
-    font-family: 'Cormorant Infant', serif;;
+    font-family: 'Cormorant Infant', serif;
 }
 .wrapper {
     width: 100%;
@@ -14,7 +14,7 @@ body {
     background-repeat: no-repeat,no-repeat,no-repeat;
     background-position: bottom left,bottom right,bottom 120px center;
     background-size: 458px 565px, 456px 347px,cover;
-    border: 1px solid #000;
+    /* border: 1px solid #000; */
 }
 .wrapper header {
     width: 95%;
@@ -23,7 +23,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border: 1px solid #000;
+    /* border: 1px solid #000; */
 }
 .wrapper header .logo a img {
     width: 120px;
@@ -168,7 +168,7 @@ body {
     margin: auto;
     margin-top: 20px;
     text-align: center;
-    border: 1px solid #000;
+    /* border: 1px solid #000; */
 }
 .wrapper .name img {
     width: 443px;
@@ -218,12 +218,13 @@ body {
 }
 
 .wrapper .icon {
-    width: 46%;
+    width: 50%;
     margin: auto;
     margin-top: 127px;
     display: flex;
     align-items: center;
-    border: 1px solid #000;
+    justify-content: center;
+    /* border: 1px solid #000; */
 }
 .wrapper .icon ul{
     list-style: none;
@@ -284,4 +285,191 @@ body {
     text-align: center;
     color: #195557;
     margin-top: 8px;
+}
+
+.slide__container {
+    width: 60%;
+    margin: auto;
+    padding-bottom: 100px;
+    /* border: 1px solid #000; */
+    margin-top: 109px;
+}
+
+.card__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card {
+    position: relative;
+    width: 570px;
+    height: 397px;
+    box-shadow: 4px 4px 40px #F1F1F1;
+    border-radius: 20px 20px 0px 20px;
+    display: flex;
+    align-items: center;
+    background:linear-gradient(-45deg, transparent 50px, #FFEDCD 0);
+    margin: 0px 37px;
+}
+.card:nth-child(2) {
+    background:linear-gradient(-45deg, transparent 50px, #E2F0DF 0);
+}
+
+.card .discount {
+    position: absolute;
+    width: 68px;
+    height: 36px;    
+    background: #70908B;
+    display: flex;
+    align-items: center;
+    top: -3%;
+    left: 10%;
+}
+.card .discount p{
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: #FFFFFF;
+    margin: auto;
+}
+
+.card .about {
+    width: 30%;
+    padding-top: 54px;
+    padding-left: 59px;
+}
+.card .about h2{
+    font-family: 'Cormorant Infant';
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    color: #195557;
+}
+.card .about p{
+    font-family: 'Raleway';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: #000000;
+    margin-top: 17px;
+}
+.card .price {
+    padding-bottom: 58px;
+}
+.card .price p {
+    margin: 0;
+}
+.card .price .old__price {
+    font-family: 'Cormorant Infant';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    text-decoration-line: line-through;
+    color: #C2CCCA;
+    margin-top: 7px;
+}
+.card .price .new__price {
+    font-family: 'Cormorant Infant';
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    color: #195557;
+    
+}
+
+.card .info {
+    position: absolute;
+    width: 37px;
+    height: 37px;
+    top: 3%;
+    right: 3%;
+}
+.card .info .more {
+    width: 220px;
+    height: 88px;
+    display: none;
+    position: absolute;
+    background-image: url(icon/info-more.svg);
+    z-index: 999999999;
+    left: -245%;
+    margin-top: 7px;
+}
+.card .info:hover .more {
+    display: inherit;
+}
+.card .info .more ul {
+    width: 69%;
+    height: 95%;
+    margin: auto;
+    padding-top: 3%;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.card .info .more ul li {
+    display: flex;
+    align-items: center;
+}
+.card .info .more ul .vaccin {
+    margin-right: 28px;
+}
+.card .info .more ul .vaccin img{
+    width: 20px;
+    height: 19px;
+    margin-right: 4px;
+}
+.card .info .more ul .vaccin p{
+    font-family: 'Raleway';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    text-transform: lowercase;
+    color: #FFFFFF;
+}
+.card .info .more ul .favorit img{
+    width: 18px;
+    height: 16px;
+    margin-right: 4px;
+}
+.card .info .more ul .favorit p{
+    font-family: 'Raleway';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    text-transform: lowercase;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: #FFFFFF;
+}
+
+.card .card__image {
+    display: block;
+    bottom: 5%;
+}
+.card .card__image img {
+    position: absolute;
+    width: 363px;
+    height: 265px;
+    bottom: 5%;
+    right: 0%;
+}
+.card:nth-child(2) .card__image img {
+    position: absolute;
+    width: 363px;
+    height: 265px;
+    bottom: -4%;
+    right: 0%;
+}
+
+.card .plus {
+    position: absolute;
+    width: 27px;
+    height: 27px;
+    bottom: 1%;
+    right: 1%;
+}
+.card .plus img:hover {
+    cursor: pointer;
 }
