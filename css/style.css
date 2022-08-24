@@ -288,17 +288,20 @@ body {
 }
 
 .slide__container {
-    width: 60%;
+    width: 70%;
     margin: auto;
-    padding-bottom: 100px;
     /* border: 1px solid #000; */
     margin-top: 109px;
 }
 
 .card__wrapper {
+    width: 100%;
+    margin: auto;
+    padding: 22px;
+}
+.cards {
     display: flex;
     align-items: center;
-    justify-content: center;
 }
 .card {
     position: relative;
@@ -475,4 +478,29 @@ body {
 }
 .card .plus img:hover {
     cursor: pointer;
+}
+
+.slider-buttons {
+    position: absolute;
+    right: 20px;
+    left: 20px;
+    bottom: 200px;
+    z-index: 9;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.slider__button {
+    cursor: pointer;
+}
+.slider__buttons .slider__button {
+    margin-left: -10px;
+}
+.slider__buttons:nth-child(2) .slider__button {
+    margin-right: -10px;
+}
+.slider__button img{
+    width: 24px;
+    height: 24px;
 }
