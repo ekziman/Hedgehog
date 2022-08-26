@@ -244,22 +244,22 @@
 
             <div class="form__radio-btn">
                 <div class="btn">
-                    <input id="btn-1" type="radio" name="btn" value="1" checked>
+                    <input id="btn-1" type="radio" name="btn" value="1" checked="checked">
                     <label for="btn-1"><p>хочу ёжика для себя</p></label>
                 </div>
                 <div class="btn">
-                    <input id="btn-2" type="radio" name="btn" value="2" checked>
+                    <input id="btn-2" type="radio" name="btn" value="2">
                     <label for="btn-2"><p>хочу ёжика для детей</p></label>
                 </div>
                 <div class="btn">
-                    <input id="btn-3" type="radio" name="btn" value="3" checked>
+                    <input id="btn-3" type="radio" name="btn" value="3">
                     <label for="btn-3"><p>хочу ёжика для разведения</p></label>
                 </div>
 
                 <div class="radio_button">
                     <div class="radio_group-1">
                         <div class="radio-btn">
-                            <input id="radio-1" type="radio" name="radio" value="1">
+                            <input id="radio-1" type="radio" name="radio" value="1" checked="checked">
                             <label for="radio-1"><p>Мне нужен 1-2 ёжика</p></label>
                         </div>
                         <div class="radio-btn">
@@ -282,9 +282,65 @@
 
             </div>
 
-
+            <div class="form__input-box">
+                <div class="input_box-mand">
+                    <div class="input_bx">
+                        <input class="input" type="text" name="name" id="name" placeholder="Ваше имя">
+                    </div>
+                    <div class="input_bx">
+                        <input class="input" type="text" name="phone" id="phone" placeholder="Ваш телефон">
+                    </div>
+                    <div class="input_bx">
+                        <input class="input" type="text" name="e-mail" id="e-mail" placeholder="Ваш e-mail">
+                    </div>
+                </div>
+                <div class="message-box">
+                    <textarea placeholder="Комментарий к заявке"></textarea>
+                </div>
+            </div>
+            <div class="button">
+                <input type="button" value="Купить ёжика">
+            </div>
         </form>
+        
+        <div class="info-befo">
+            <div class="remain">
+                <img src="icon/hedgehog-remain.svg" alt="">
+                <h2>У на осталось еще:&nbsp;<p><span> 25 </span>ёжиков</p></h2>
+            </div>
+            <p class="offer">Торопитесь! Акция действует до 26. 02. 2023</p>
+        </div>
 
+        <footer>
+            <div class="nav-footer">
+                <div class="logo">
+                    <img src="icon/footer-logo.svg" alt="">
+                </div>
+                <nav>
+                    <ul class="menu-footer">
+                        <li><a href="#">Каталог</a></li>
+                        <li><a href="#">о нас</a></li>
+                        <li><a href="#">контакты</a></li>
+                        <li><a href="#">галерея</a></li>
+                    </ul>
+                    <div class="social-media">
+                        <ul>
+                            <li><a href="#"><img src="icon/instagram.svg" alt=""></a></li>
+                            <li><a href="#"><img src="icon/facebook.svg" alt=""></a></li>
+                            <li><a href="#"><img src="icon/twitter.svg" alt=""></a></li>
+                        </ul>
+                    </div>
+                    <div class="phone">
+                        <a class="header__phone" href="tel:+79655698998">+7 (965) 569-89-98
+                        </a>
+                    </div>
+                </nav>
+            </div>
+            <div class="copyright">
+                <p>Все права защищены. <br>
+                    Указанная стоимость товаров и условия их приобретения действительны на текущую дату.</p>
+            </div>
+        </footer>
     </div>
 </body>
 <script src="js/swiper-bundle.min.js"></script>

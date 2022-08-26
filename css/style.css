@@ -6,13 +6,15 @@
 }
 body {
     font-family: 'Cormorant Infant', serif;
+    width: 100%;
+    height: 100vh;
 }
 .wrapper {
     width: 100%;
-    height: 100vh;
+    height: 1106px;
     background-image: url(../img/img-1.png),url(../img/img-2.png),url(../img/bg.png);
     background-repeat: no-repeat,no-repeat,no-repeat;
-    background-position: bottom left,bottom right,bottom 120px center;
+    background-position: bottom -55px left,bottom -10px right,bottom 0px center;
     background-size: 458px 565px, 456px 347px,cover;
     /* border: 1px solid #000; */
 }
@@ -166,7 +168,7 @@ body {
     width: 50%;
     height: auto;
     margin: auto;
-    margin-top: 20px;
+    margin-top: 230px;
     text-align: center;
     /* border: 1px solid #000; */
 }
@@ -220,7 +222,7 @@ body {
 .wrapper .icon {
     width: 50%;
     margin: auto;
-    margin-top: 127px;
+    margin-top: 150px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -291,7 +293,7 @@ body {
     width: 70%;
     margin: auto;
     /* border: 1px solid #000; */
-    margin-top: 109px;
+    margin-top: 79px;
 }
 
 .card__wrapper {
@@ -312,7 +314,7 @@ body {
     border-radius: 20px 20px 0px 20px;
     display: flex;
     background:linear-gradient(-45deg, transparent 50px, #FFEDCD 0);
-    margin: 0px 30px;
+    margin: 0px 20px;
 }
 .card:nth-child(2) {
     background:linear-gradient(-45deg, transparent 50px, #E2F0DF 0);
@@ -389,8 +391,8 @@ body {
     position: absolute;
     width: 37px;
     height: 37px;
-    top: 3%;
-    right: 3%;
+    top: 5%;
+    right: 5%;
 }
 .card .info .more {
     width: 220px;
@@ -457,15 +459,15 @@ body {
 }
 .card .card__image img {
     position: absolute;
-    width: 283px;
-    height: 205px;
+    width: 303px;
+    height: 235px;
     bottom: 5%;
     right: 0%;
 }
 .card:nth-child(2) .card__image img {
     position: absolute;
-    width: 343px;
-    height: 245px;
+    width: 373px;
+    height: 275px;
     bottom: -4%;
     right: -2%;
 }
@@ -483,8 +485,8 @@ body {
 
 .slider-buttons {
     position: absolute;
-    right: 20px;
-    left: 20px;
+    right: 0px;
+    left: 0px;
     bottom: 200px;
     z-index: 9;
     display: flex;
@@ -496,7 +498,7 @@ body {
     cursor: pointer;
 }
 .slider__buttons .slider__button {
-    margin-left: -10px;
+    margin-left: 0px;
 }
 .slider__buttons:nth-child(2) .slider__button {
     margin-right: -10px;
@@ -507,11 +509,12 @@ body {
 }
 
 .callback {
+    position: relative;
     width: 1197px;
     height: 484px;
     margin: auto;
     margin-top: 84px;
-    border: 1px solid #000;
+    /* border: 1px solid #000; */
     background: #EAEEEF;
     border-radius: 30px;
 }
@@ -521,7 +524,7 @@ body {
     line-height: 54px;
     color: #195557;
     text-align: center;
-    margin-top: 39px;
+    padding-top: 39px;
 }
 
 .callback .form__radio-btn {
@@ -569,6 +572,7 @@ body {
 	color: #195557;
 }
 
+
 .callback .form__radio-btn .radio_button {
     width: 391px;
     height: 49px;
@@ -583,11 +587,264 @@ body {
 }
 .callback .form__radio-btn .radio_button .radio-btn input{
     margin-right: 7px;
-    background: #000;
+}
+
+.callback .form__radio-btn .radio_button .radio-btn input[type="radio"]:checked, 
+.callback .form__radio-btn .radio_button .radio-btn input[type="radio"]:not(:checked) 
+{
+    position: absolute;
+    left: -9999px;
+}
+.callback .form__radio-btn .radio_button .radio-btn input[type="radio"]:checked + label, 
+.callback .form__radio-btn .radio_button .radio-btn input[type="radio"]:not(:checked) + label {
+    display: inline-block;
+    position: relative;
+    padding-left: 28px;
+    line-height: 20px;
+    cursor: pointer;
+}
+
+.callback .form__radio-btn .radio_button .radio-btn input[type="radio"]:checked + label:before, 
+.callback .form__radio-btn .radio_button .radio-btn input[type="radio"]:not(:checked) + label:before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 14px;
+    height: 14px;
+    border: 1px solid #70908B;
+    background-color: #FFFFFF;
+}
+.callback .form__radio-btn .radio_button .radio-btn input[type="radio"]:checked + label:before, 
+.callback .form__radio-btn .radio_button .radio-btn input[type="radio"]:not(:checked) + label:before {
+    border-radius: 100%;
+}
+ 
+.callback .form__radio-btn .radio_button .radio-btn input[type="radio"]:checked + label:after, 
+.callback .form__radio-btn .radio_button .radio-btn input[type="radio"]:not(:checked) + label:after {
+    content: "";
+    position: absolute;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+.callback .form__radio-btn .radio_button .radio-btn input[type="radio"]:checked + label:after, 
+.callback .form__radio-btn .radio_button .radio-btn input[type="radio"]:not(:checked) + label:after {
+    left: 4px;
+    top: 4px;
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+    background-color: #70908B;
+}
+
+.callback .form__radio-btn .radio_button .radio-btn input[type="radio"]:not(:checked) + label:after {
+    opacity: 0;
+}
+.callback .form__radio-btn .radio_button .radio-btn input[type="radio"]:checked + label:after {
+    opacity: 1;
 }
 .callback .form__radio-btn .radio_button .radio-btn label{
     font-weight: 700;
     font-size: 14px;
     line-height: 17px;
     color: #70908B;
+}
+
+.form__input-box {
+    width: 1096px;
+    height: 190px;
+    margin: auto;
+    margin-top: 43px;
+}
+.form__input-box input{
+    background: #F8F8F8;
+    border-radius: 8px;
+    border: none;
+    font-family: 'Raleway';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #195557;
+}
+.form__input-box input[type="text"] {
+    padding-left: 27px;
+}
+.form__input-box input::placeholder, textarea::placeholder{
+    color: #195557;
+}
+.form__input-box .input_box-mand{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.form__input-box .input_box-mand .input_bx {
+    display: block;
+    width: 352px;
+    height: 62px;
+}
+.form__input-box .input_box-mand .input_bx input{
+    width: calc(100% - 28px);
+    height: 100%;
+}
+
+.form__input-box .message-box {
+    width: 1096;
+    height: 108px;
+    margin-top: 20px;
+}
+.form__input-box .message-box textarea {
+    width: calc(100% - 56px);
+    height: calc(100% - 56px);
+    border: none;
+    border-radius: 8px;
+    font-family: 'Raleway';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #195557;
+    padding: 28px;
+    resize: none;
+}
+
+.callback .button {
+    position: absolute;
+    width: 328px;
+    height: 69px;
+    display: inline-block;
+    bottom: -35px;
+    left: calc(50% - 164px);
+}
+.callback .button input[type="button"] {
+    color: #FFFFFF;
+    width: 100%;
+    height: 100%;
+    background: #70908B;
+    box-shadow: 4px 4px 20px #C2CCCA, -8px -8px 20px #FFFFFF;
+    border-radius: 40px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: .1s linear;
+}
+.callback .button input[type="button"]:hover {
+    background: linear-gradient(90.14deg, #B0D3CE -2.41%, #FFEDCE 99.79%);
+    color: #195557;
+}
+
+
+.info-befo {
+    width: 353px;
+    height: 113px;
+    margin: auto;
+    margin-top: 100px;
+}
+.info-befo .remain{
+    display: flex;
+    align-items: center;
+}
+.info-befo .remain img{
+    width: 35px;
+    height: 19px;
+    margin-right: 12px;
+}
+.info-befo .remain h2{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #195557;
+    display: flex;
+}
+.info-befo .remain h2 p {
+    text-decoration: underline;
+}
+.info-befo .offer {
+    width: 191px;
+    margin: auto;
+    margin-top: 30px;
+    text-align: center;
+    font-family: 'Raleway';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: #195557;
+}
+
+footer {
+    width: 100%;
+    height: 184px;
+    margin-top: 60px;
+    background: #70908B;
+}
+footer .nav-footer {
+    width: 95%;
+    height: 58px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 49px;
+}
+footer .nav-footer nav {
+    display: flex;
+    align-items: center;
+}
+footer .nav-footer nav ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+footer .nav-footer nav .menu-footer{
+    width: 548px;
+    justify-content: space-between;
+    margin-right: 99px;
+}
+footer .nav-footer nav ul li a{
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+footer .nav-footer nav ul li a:hover{
+    text-decoration: underline;
+}
+footer .nav-footer nav .social-media ul{
+    width: 146px;
+    justify-content: space-between;
+    margin-right: 71px;
+}
+footer .nav-footer nav .social-media ul li img{
+    width: 30px;
+    height: 30px;
+}
+
+footer .nav-footer nav .phone a{
+    font-family: 'Raleway';
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 26px;
+    text-transform: uppercase;
+    font-feature-settings: 'tnum' on, 'lnum' on;
+    color: #FFFFFF;
+}
+footer .nav-footer nav .phone a:hover{
+    text-decoration: underline;
+}
+
+footer .copyright {
+    width: 95%;
+    margin: auto;
+    margin-top: 24px;
+}
+footer .copyright p{
+    font-family: 'Raleway';
+    font-weight: 400;
+    font-size: 9px;
+    line-height: 131.4%;
+    color: #FFFFFF;
 }
